@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <section id="home">
+            <div class="container flex mx-auto place-content-around p-2">
+                <div class="left">
+                    <div class="top">
+                        <p>Hi <span>There.</span></p>
+                        <p>This is <span>Dhiren</span> <span>Kathayat</span></p>
+                    </div>
+                    <div class="bottom">
+                        <p class="profession">An AI/ML Engineer | CyberSecurity Expert</p>
+                        <div class="socialicons ">
+                            <p class="mt-2">Get Connected!</p>
+                            <ul class="flex space-x-4">
+                                <li><a href="" class="text-blue-500 hover:underline"><img src="./assets/icons/linkedin.png"
+                                            alt="LinkedIn" style="width:24px;height:24px;"></a></li>
+                                <li><a href="" class="text-blue-500 hover:underline"><img src="./assets/icons/github.png"
+                                            alt="GitHub" style="width:24px;height:24px;"></a></li>
+                                <li><a href="" class="text-blue-500 hover:underline"><img src="./assets/icons/twitter.png"
+                                            alt="Twitter" style="width:24px;height:24px;"></a></li>
+                            </ul>
+                        </div>
+                        <div class="resume mt-3">
+                            <a href="./assets/Dhiren_Resume.pdf" download class="download-resume-btn">
+                                <span class="download-icon">&#x1F4BE;</span> Download Resume
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="img">
+                        <div class="avatar-wrapper">
+                            <div class="avatar-oval one"></div>
+                            <div class="avatar-oval two"></div>
+                            <div class="avatar-oval three"></div>
+                            <img src="./assets/images/avatar.png" alt="Profile Picture">
+                        </div>
+                    </div>
+                    <div class="worklist">
+                        <h2 class="text-xl font-semibold mb-2 mt-2">Project Count 👇🏻</h2>
+                        <ul class="flex mt-3 place-content-around">
+                            <li>
+                                <div class="listcard">
+                                    <span id="count">5</span>
+                                    <div class="listcard-content">
+                                        <img src="./assets/icons/artificial-intelligence.png" alt="">
+                                        <h3 id="category">ML/AI</h3>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="listcard">
+                                    <span id="count">1</span>
+                                    <div class="listcard-content">
+                                        <img src="./assets/icons/cybersecurity.png" alt="">
+                                        <h3 id="category">Cyber Security</h3>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="listcard">
+                                    <span id="count">11</span>
+                                    <div class="listcard-content">
+                                        <img src="./assets/icons/other.png" alt="">
+                                        <h3 id="category">Others</h3>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider" aria-hidden="true">
+            <svg width="100%" height="48" viewBox="0 0 1440 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0,24 Q360,0 720,24 T1440,24 V48 H0 Z" fill="#e0eaff" opacity="0.7"/>
+                <path d="M0,36 Q360,12 720,36 T1440,36 V48 H0 Z" fill="#2a2ae4" opacity="0.12"/>
+            </svg>
+        </div>
+
+        <section id="about">
+            <div class="about-card container mx-auto p-6 rounded-2xl shadow-lg bg-white/80 flex flex-col md:flex-row items-center gap-8 mt-8 relative overflow-hidden">
+                <div class="about-bg-anim absolute inset-0 pointer-events-none z-0">
+                    <svg width="100%" height="100%" viewBox="0 0 400 200" fill="none" xmlns="http://www.w3.org/2000/svg" style="position:absolute;top:0;left:0;">
+                        <ellipse cx="200" cy="100" rx="180" ry="60" fill="#e0eaff" opacity="0.1">
+                            <animate attributeName="rx" values="180;200;180" dur="4s" repeatCount="indefinite"/>
+                        </ellipse>
+                        <ellipse cx="120" cy="60" rx="60" ry="20" fill="#2a2ae4" opacity="0.1">
+                            <animate attributeName="cx" values="120;160;120" dur="3s" repeatCount="indefinite"/>
+                        </ellipse>
+                        <ellipse cx="320" cy="140" rx="40" ry="14" fill="#ffd700" opacity="0.1">
+                            <animate attributeName="cx" values="320;280;320" dur="3.5s" repeatCount="indefinite"/>
+                        </ellipse>
+                    </svg>
+                </div>
+                <div class="about-img flex-shrink-0 mb-4 md:mb-0 relative z-10">
+                    <img src="./assets/images/avatar.png" alt="About Me" style="width:220px;height:220px;border:3px solid #2a2e;">
+                    <div class="about-avatar-glow"></div>
+                </div>
+                <div class="about-content text-center md:text-left relative z-10">
+                    <h2 class="text-2xl font-bold text-blue-700 mb-2" style="font-family:'Finger Paint',sans-serif;">About Me</h2>
+                    <p class="text-gray-700 text-lg mb-4">Hi, I'm <span class="font-bold text-blue-600">Dhiren Kathayat</span>, passionate about <span class="highlight-anim">AI/ML</span> and <span class="highlight-anim">Cybersecurity</span>. I love building smart solutions and securing digital worlds. My journey is driven by curiosity, creativity, and a commitment to excellence.</p>
+                    <ul class="flex flex-wrap gap-4 justify-center md:justify-start">
+                        <li class="about-tag">AI/ML Engineer</li>
+                        <li class="about-tag">Cybersecurity Expert</li>
+                        <li class="about-tag">Problem Solver</li>
+                        <li class="about-tag">Team Player</li>
+                    </ul>
+                    <p class="text-gray-700 text-lg mt-6">I believe in lifelong learning and strive to make a positive impact through technology and collaboration.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider" aria-hidden="true">
+            <svg width="100%" height="48" viewBox="0 0 1440 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0,24 Q360,0 720,24 T1440,24 V48 H0 Z" fill="#e0eaff" opacity="0.7"/>
+                <path d="M0,36 Q360,12 720,36 T1440,36 V48 H0 Z" fill="#2a2ae4" opacity="0.12"/>
+            </svg>
+        </div>
+
+        <section id="myworks">
+            <div class="myworks-card container mx-auto p-6 rounded-2xl shadow-lg bg-white/80 flex flex-col gap-8 mt-8">
+                <h2 class="text-2xl font-bold text-blue-700 mb-4" style="font-family:'Finger Paint',sans-serif;">My Works</h2>
+                <div class="myworks-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="work-item bg-[#232946] text-white rounded-xl p-6 flex flex-col items-center hover:scale-105 transition-transform duration-300 shadow-md">
+                        <img src="./assets/icons/artificial-intelligence.png" alt="Project One" style="width:48px;height:48px;" class="mb-4">
+                        <h3 class="font-bold text-lg mb-2">Project One</h3>
+                        <p class="text-sm mb-2">A smart AI solution for real-world problems.</p>
+                        <a href="#" class="text-blue-400 hover:underline font-semibold">View Details</a>
+                    </div>
+                    <div class="work-item bg-[#232946] text-white rounded-xl p-6 flex flex-col items-center hover:scale-105 transition-transform duration-300 shadow-md">
+                        <img src="./assets/icons/cybersecurity.png" alt="Project Two" style="width:48px;height:48px;" class="mb-4">
+                        <h3 class="font-bold text-lg mb-2">Project Two</h3>
+                        <p class="text-sm mb-2">Securing digital assets with advanced techniques.</p>
+                        <a href="#" class="text-blue-400 hover:underline font-semibold">View Details</a>
+                    </div>
+                    <div class="work-item bg-[#232946] text-white rounded-xl p-6 flex flex-col items-center hover:scale-105 transition-transform duration-300 shadow-md">
+                        <img src="./assets/icons/other.png" alt="Project Three" style="width:48px;height:48px;" class="mb-4">
+                        <h3 class="font-bold text-lg mb-2">Project Three</h3>
+                        <p class="text-sm mb-2">Creative solutions for unique challenges.</p>
+                        <a href="#" class="text-blue-400 hover:underline font-semibold">View Details</a>
+                    </div>
+                    <div class="work-item bg-[#232946] text-white rounded-xl p-6 flex flex-col items-center hover:scale-105 transition-transform duration-300 shadow-md">
+                        <img src="./assets/icons/artificial-intelligence.png" alt="Project Four" style="width:48px;height:48px;" class="mb-4">
+                        <h3 class="font-bold text-lg mb-2">Project Four</h3>
+                        <p class="text-sm mb-2">AI-powered chatbot for customer support.</p>
+                        <a href="#" class="text-blue-400 hover:underline font-semibold">View Details</a>
+                    </div>
+                    <div class="work-item bg-[#232946] text-white rounded-xl p-6 flex flex-col items-center hover:scale-105 transition-transform duration-300 shadow-md">
+                        <img src="./assets/icons/cybersecurity.png" alt="Project Five" style="width:48px;height:48px;" class="mb-4">
+                        <h3 class="font-bold text-lg mb-2">Project Five</h3>
+                        <p class="text-sm mb-2">Network security monitoring dashboard.</p>
+                        <a href="#" class="text-blue-400 hover:underline font-semibold">View Details</a>
+                    </div>
+                    <div class="work-item bg-[#232946] text-white rounded-xl p-6 flex flex-col items-center hover:scale-105 transition-transform duration-300 shadow-md">
+                        <img src="./assets/icons/other.png" alt="Project Six" style="width:48px;height:48px;" class="mb-4">
+                        <h3 class="font-bold text-lg mb-2">Project Six</h3>
+                        <p class="text-sm mb-2">Mobile app for productivity tracking.</p>
+                        <a href="#" class="text-blue-400 hover:underline font-semibold">View Details</a>
+                    </div>
+                    <div class="work-item bg-[#232946] text-white rounded-xl p-6 flex flex-col items-center hover:scale-105 transition-transform duration-300 shadow-md">
+                        <img src="./assets/icons/artificial-intelligence.png" alt="Project Seven" style="width:48px;height:48px;" class="mb-4">
+                        <h3 class="font-bold text-lg mb-2">Project Seven</h3>
+                        <p class="text-sm mb-2">Image recognition for smart devices.</p>
+                        <a href="#" class="text-blue-400 hover:underline font-semibold">View Details</a>
+                    </div>
+                    <div class="work-item bg-[#232946] text-white rounded-xl p-6 flex flex-col items-center hover:scale-105 transition-transform duration-300 shadow-md">
+                        <img src="./assets/icons/cybersecurity.png" alt="Project Eight" style="width:48px;height:48px;" class="mb-4">
+                        <h3 class="font-bold text-lg mb-2">Project Eight</h3>
+                        <p class="text-sm mb-2">Penetration testing toolkit.</p>
+                        <a href="#" class="text-blue-400 hover:underline font-semibold">View Details</a>
+                    </div>
+                    <div class="work-item bg-[#232946] text-white rounded-xl p-6 flex flex-col items-center hover:scale-105 transition-transform duration-300 shadow-md">
+                        <img src="./assets/icons/other.png" alt="Project Nine" style="width:48px;height:48px;" class="mb-4">
+                        <h3 class="font-bold text-lg mb-2">Project Nine</h3>
+                        <p class="text-sm mb-2">Portfolio website for creative professionals.</p>
+                        <a href="#" class="text-blue-400 hover:underline font-semibold">View Details</a>
+                    </div>
+                    <div class="work-item bg-[#232946] text-white rounded-xl p-6 flex flex-col items-center hover:scale-105 transition-transform duration-300 shadow-md">
+                        <img src="./assets/icons/artificial-intelligence.png" alt="Project Ten" style="width:48px;height:48px;" class="mb-4">
+                        <h3 class="font-bold text-lg mb-2">Project Ten</h3>
+                        <p class="text-sm mb-2">Speech-to-text converter for accessibility.</p>
+                        <a href="#" class="text-blue-400 hover:underline font-semibold">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider" aria-hidden="true">
+            <svg width="100%" height="48" viewBox="0 0 1440 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0,24 Q360,0 720,24 T1440,24 V48 H0 Z" fill="#e0eaff" opacity="0.7"/>
+                <path d="M0,36 Q360,12 720,36 T1440,36 V48 H0 Z" fill="#2a2ae4" opacity="0.12"/>
+            </svg>
+        </div>
+
+        <section id="certificate">
+            <div class="certificate-card container mx-auto p-6 rounded-2xl shadow-lg bg-white/80 flex flex-col gap-8 mt-8">
+                <h2 class="text-2xl font-bold text-blue-700 mb-4" style="font-family:'Finger Paint',sans-serif;">Certificates</h2>
+                <div class="certificate-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="cert-item bg-[#232946] text-white rounded-xl p-6 flex flex-col items-center hover:scale-105 transition-transform duration-300 shadow-md">
+                        <img src="./assets/icons/artificial-intelligence.png" alt="AI Certificate" style="width:48px;height:48px;" class="mb-4">
+                        <h3 class="font-bold text-lg mb-2">AI/ML Specialist</h3>
+                        <p class="text-sm mb-2">Coursera, 2024</p>
+                        <a href="#" class="text-blue-400 hover:underline font-semibold">View Certificate</a>
+                    </div>
+                    <div class="cert-item bg-[#232946] text-white rounded-xl p-6 flex flex-col items-center hover:scale-105 transition-transform duration-300 shadow-md">
+                        <img src="./assets/icons/cybersecurity.png" alt="Cybersecurity Certificate" style="width:48px;height:48px;" class="mb-4">
+                        <h3 class="font-bold text-lg mb-2">Cybersecurity Expert</h3>
+                        <p class="text-sm mb-2">edX, 2023</p>
+                        <a href="#" class="text-blue-400 hover:underline font-semibold">View Certificate</a>
+                    </div>
+                    <div class="cert-item bg-[#232946] text-white rounded-xl p-6 flex flex-col items-center hover:scale-105 transition-transform duration-300 shadow-md">
+                        <img src="./assets/icons/other.png" alt="Other Certificate" style="width:48px;height:48px;" class="mb-4">
+                        <h3 class="font-bold text-lg mb-2">Full Stack Developer</h3>
+                        <p class="text-sm mb-2">Udemy, 2022</p>
+                        <a href="#" class="text-blue-400 hover:underline font-semibold">View Certificate</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider" aria-hidden="true">
+            <svg width="100%" height="48" viewBox="0 0 1440 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0,24 Q360,0 720,24 T1440,24 V48 H0 Z" fill="#e0eaff" opacity="0.7"/>
+                <path d="M0,36 Q360,12 720,36 T1440,36 V48 H0 Z" fill="#2a2ae4" opacity="0.12"/>
+            </svg>
+        </div>
+
+        <section id="contact">
+            <div class="contact-card container mx-auto p-8 rounded-2xl shadow-lg bg-white/80 flex flex-col gap-8 mt-8">
+                <h2 class="text-2xl font-bold text-blue-700 mb-4" style="font-family:'Finger Paint',sans-serif;">Contact Me</h2>
+                <div class="flex flex-col md:flex-row gap-8 items-center">
+                    <div class="contact-info flex-1 text-center md:text-left">
+                        <p class="text-lg text-blue-700 font-semibold mb-2">Let's connect!</p>
+                        <div class="flex flex-col gap-4">
+                            <a href="mailto:dhiren@example.com" class="contact-link"><img src="./assets/icons/internet.png" style="width:28px;height:28px;vertical-align:middle;margin-right:8px;"> dhiren@example.com</a>
+                            <a href="tel:+1234567890" class="contact-link"><img src="./assets/icons/other.png" style="width:28px;height:28px;vertical-align:middle;margin-right:8px;"> +1234567890</a>
+                        </div>
+                        <div class="flex gap-4 mt-4 justify-center md:justify-start">
+                            <a href="#" class="contact-social"><img src="./assets/icons/linkedin.png" style="width:28px;height:28px;"></a>
+                            <a href="#" class="contact-social"><img src="./assets/icons/github.png" style="width:28px;height:28px;"></a>
+                            <a href="#" class="contact-social"><img src="./assets/icons/twitter.png" style="width:28px;height:28px;"></a>
+                        </div>
+                    </div>
+                    <form class="flex-1 flex flex-col gap-4 max-w-md w-full bg-[#232946] p-6 rounded-xl shadow-md">
+                        <input type="text" placeholder="Your Name" class="p-3 rounded bg-[#232946] text-white border-none focus:ring-2 focus:ring-blue-400">
+                        <input type="email" placeholder="Your Email" class="p-3 rounded bg-[#232946] text-white border-none focus:ring-2 focus:ring-blue-400">
+                        <textarea rows="4" placeholder="Your Message" class="p-3 rounded bg-[#232946] text-white border-none focus:ring-2 focus:ring-blue-400"></textarea>
+                        <button type="submit" class="bg-blue-500 text-white px-6 py-3 rounded font-bold hover:bg-blue-700 transition-colors">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <div class="nav fixed top-1/2 right-6 transform -translate-y-1/2 z-50">
+            <nav>
+                <ul class="flex flex-col gap-6 items-stretch justify-center">
+                    <li class="group"><a href="#about" title="About" class="flex items-center gap-2"><img src="./assets/icons/info.png" alt="About" style="width:24px;height:24px;"><span class="nav-label group-hover:inline hidden text-blue-500 font-medium">About</span></a></li> 
+                    <li class="group"><a href="#certificate" title="Certificates" class="flex items-center gap-2"><img src="./assets/icons/award.png" alt="Certificates" style="width:24px;height:24px;"><span class="nav-label group-hover:inline hidden text-blue-500 font-medium">Certificates</span></a></li>
+                    <li class="group"><a href="#myworks" title="My Works" class="flex items-center gap-2"><img src="./assets/icons/portfolio-management.png" alt="Works" style="width:24px;height:24px;"><span class="nav-label group-hover:inline hidden text-blue-500 font-medium">My Works</span></a></li>
+                    <li class="group"><a href="#contact" title="Contact" class="flex items-center gap-2"><img src="./assets/icons/phone.png" alt="Contact" style="width:24px;height:24px;"><span class="nav-label group-hover:inline hidden text-blue-500 font-medium">Contact</span></a></li>
+                </ul>
+            </nav>
+        </div>
+        <button id="gotoTop" title="Go to Top"
+            style="position:fixed;bottom:32px;right:32px;z-index:1000;background:#00c9a7;color:#232946;border:none;border-radius:50%;width:48px;height:48px;display:none;align-items:center;justify-content:center;transition:background 0.2s;box-shadow:0 2px 8px rgba(42,42,228,0.10);">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up">
+                <line x1="12" y1="19" x2="12" y2="5" />
+                <polyline points="5 12 12 5 19 12" />
+            </svg>
+        </button>
+        <script>
+        const gotoTopBtn = document.getElementById('gotoTop');
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 100) {
+                gotoTopBtn.style.display = 'flex';
+            } else {
+                gotoTopBtn.style.display = 'none';
+            }
+        });
+        gotoTopBtn.onclick = function() {
+            window.scrollTo({top:0,behavior:'smooth'});
+        };
+        </script>
+        <div id="projectPopupBg" class="project-popup-bg">
+            <div id="projectPopup" class="project-popup">
+                <button class="project-popup-close" onclick="closeProjectPopup()">&times;</button>
+                <div id="projectPopupContent" class="project-popup-content"></div>
+            </div>
+        </div>
+<script>
+const projects = [
+    {
+        title: "Project One",
+        icon: "./assets/icons/artificial-intelligence.png",
+        image: "./assets/images/certificate.jpg",
+        description: "A smart AI solution for real-world problems.",
+        details: `<h3>Overview</h3><p>This project leverages advanced AI algorithms to solve complex real-world problems. It features machine learning models, data visualization, and a user-friendly interface for actionable insights.</p><h3>Features</h3><ul><li>Deep Learning Models</li><li>Interactive Dashboard</li><li>Data Analytics</li></ul>`,
+        link: "https://github.com/example/project1",
+        linkText: "View Source Code"
+    },
+    {
+        title: "Project Two",
+        icon: "./assets/icons/cybersecurity.png",
+        image: "./assets/images/certificate.jpg",
+        description: "Securing digital assets with advanced techniques.",
+        details: `<h3>Overview</h3><p>This cybersecurity project implements state-of-the-art encryption and monitoring tools to protect digital assets from threats. Includes real-time alerts and automated vulnerability scanning.</p><h3>Features</h3><ul><li>Encryption</li><li>Threat Monitoring</li><li>Automated Scanning</li></ul>`,
+        link: "https://github.com/example/project2",
+        linkText: "View Source Code"
+    },
+    {
+        title: "Project Three",
+        icon: "./assets/icons/other.png",
+         image: "./assets/images/certificate.jpg",
+        description: "Creative solutions for unique challenges.",
+        details: `<h3>Overview</h3><p>Innovative approaches to solve unique business and technology challenges, including custom software and creative design solutions.</p><h3>Features</h3><ul><li>Custom Software Development</li><li>Creative Design Solutions</li><li>Business Consulting</li></ul>`,
+        link: "https://github.com/example/project3",
+        linkText: "View Source Code"
+    },
+    {
+        title: "Project Four",
+        icon: "./assets/icons/artificial-intelligence.png",
+         image: "./assets/images/certificate.jpg",
+        description: "AI-powered chatbot for customer support.",
+        details: `<h3>Overview</h3><p>An intelligent chatbot that uses natural language processing to provide instant support and automate customer service tasks.</p><h3>Features</h3><ul><li>Natural Language Processing</li><li>Instant Response</li><li>Customer Support Automation</li></ul>`,
+        link: "https://github.com/example/project4",
+        linkText: "View Source Code"
+    },
+    {
+        title: "Project Five",
+        icon: "./assets/icons/cybersecurity.png",
+         image: "./assets/images/certificate.jpg",
+        description: "Network security monitoring dashboard.",
+        details: `<h3>Overview</h3><p>A dashboard for monitoring network security, visualizing threats, and managing incident response efficiently.</p><h3>Features</h3><ul><li>Network Monitoring</li><li>Threat Visualization</li><li>Incident Response Management</li></ul>`,
+        link: "https://github.com/example/project5",
+        linkText: "View Source Code"
+    },
+    {
+        title: "Project Six",
+        icon: "./assets/icons/other.png",
+        image: "./assets/images/certificate.jpg",
+        description: "Mobile app for productivity tracking.",
+        details: `<h3>Overview</h3><p>A mobile application designed to help users track productivity, set goals, and analyze performance trends.</p><h3>Features</h3><ul><li>Goal Setting</li><li>Performance Analytics</li><li>Productivity Tracking</li></ul>`,
+        link: "https://github.com/example/project6",
+        linkText: "View Source Code"
+    },
+    {
+        title: "Project Seven",
+        icon: "./assets/icons/artificial-intelligence.png",
+        image: "./assets/images/certificate.jpg",
+        description: "Image recognition for smart devices.",
+        details: `<h3>Overview</h3><p>Integrates image recognition technology into smart devices for automation and enhanced user experience.</p><h3>Features</h3><ul><li>Image Recognition</li><li>Smart Device Integration</li><li>User Experience Enhancement</li></ul>`,
+        link: "https://github.com/example/project7",
+        linkText: "View Source Code"
+    },
+    {
+        title: "Project Eight",
+        icon: "./assets/icons/cybersecurity.png",
+        image: "./assets/images/certificate.jpg",
+        description: "Penetration testing toolkit.",
+        details: `<h3>Overview</h3><p>A toolkit for penetration testing, vulnerability assessment, and reporting for security professionals.</p><h3>Features</h3><ul><li>Penetration Testing</li><li>Vulnerability Assessment</li><li>Security Reporting</li></ul>`,
+        link: "https://github.com/example/project8",
+        linkText: "View Source Code"
+    },
+    {
+        title: "Project Nine",
+        icon: "./assets/icons/other.png",
+        image: "./assets/images/certificate.jpg",
+        description: "Portfolio website for creative professionals.",
+        details: `<h3>Overview</h3><p>A customizable portfolio website template for designers, developers, and other creative professionals.</p><h3>Features</h3><ul><li>Customizable Templates</li><li>Responsive Design</li><li>Easy Integration</li></ul>`,
+        link: "https://github.com/example/project9",
+        linkText: "View Source Code"
+    },
+    {
+        title: "Project Ten",
+        icon: "./assets/icons/artificial-intelligence.png",
+        image: "./assets/images/certificate.jpg",
+        description: "Speech-to-text converter for accessibility.",
+        details: `<h3>Overview</h3><p>A speech-to-text converter that improves accessibility for users with hearing impairments.</p><h3>Features</h3><ul><li>Speech Recognition</li><li>Text Conversion</li><li>Accessibility Enhancement</li></ul>`,
+        link: "https://github.com/example/project10",
+        linkText: "View Source Code"
+    }
+];
+function openProjectPopup(index) {
+    const popupBg = document.getElementById('projectPopupBg');
+    const popupContent = document.getElementById('projectPopupContent');
+    const project = projects[index];
+    popupContent.innerHTML = `
+        <img src='${project.image || project.icon}' alt='${project.title}' style='width:100%;height:auto;margin-bottom:12px;'>
+        <h2 style='font-family:Finger Paint,sans-serif;color:#ffd700;'>${project.title}</h2>
+        <p style='margin-bottom:10px;'>${project.description}</p>
+        ${project.details}
+        <a href='${project.link}' class='project-link-btn' target='_blank'>${project.linkText || 'Visit Site'}</a>
+    `;
+    popupBg.style.display = 'flex';
+}
+function closeProjectPopup() {
+    document.getElementById('projectPopupBg').style.display = 'none';
+}
+document.querySelectorAll('.work-item').forEach(function(item, idx) {
+    item.addEventListener('click', function(e) {
+        e.preventDefault();
+        openProjectPopup(idx);
+    });
+});
+        </script>
+        <div id="certificatePopupBg" class="project-popup-bg">
+            <div id="certificatePopup" class="project-popup">
+                <button class="project-popup-close" onclick="closeCertificatePopup()">&times;</button>
+                <div id="certificatePopupContent" class="project-popup-content"></div>
+            </div>
+        </div>
+<script>
+const certificates = [
+    {
+        title: "AI/ML Specialist",
+        icon: "./assets/icons/artificial-intelligence.png",
+        image: "./assets/images/certificate.jpg",
+        provider: "Coursera, 2024",
+        url: ""
+    },
+    {
+        title: "Cybersecurity Expert",
+        icon: "./assets/icons/cybersecurity.png",
+        image: "./assets/images/certificate.jpg",
+        provider: "edX, 2023",
+        url: ""
+    },
+    {
+        title: "Full Stack Developer",
+        icon: "./assets/icons/other.png",
+        image: "./assets/images/certificate-fullstack.png",
+        provider: "Udemy, 2022",
+        url: "https://example.com/certificate-fullstack"
+    }
+];
+function openCertificatePopup(index) {
+    const cert = certificates[index];
+    if (cert.url) {
+        window.open(cert.url, '_blank');
+        return;
+    }
+    const popupBg = document.getElementById('certificatePopupBg');
+    const popupContent = document.getElementById('certificatePopupContent');
+    popupContent.innerHTML = `
+        <img src='${cert.image || cert.icon}' alt='${cert.title}' style='max-width:100%;border-radius:12px;margin-bottom:18px;'>
+        <h2>${cert.title}</h2>
+        <p>${cert.provider}</p>
+    `;
+    popupBg.style.display = 'flex';
+}
+function closeCertificatePopup() {
+    document.getElementById('certificatePopupBg').style.display = 'none';
+}
+document.querySelectorAll('.cert-item').forEach(function(item, idx) {
+    item.addEventListener('click', function(e) {
+        e.preventDefault();
+        openCertificatePopup(idx);
+    });
+});
+        </script>
+
+        <footer>
+            <div class="container mx-auto p-4 text-center">
+                <p class="text-sm text-gray-600">© 2025 Dhiren. All rights reserved.</p>
+            </div>
+        </footer>
+    </main>
+    <script>
+        // Smooth scroll for navigation links
+        document.querySelectorAll('.nav a').forEach(function(link) {
+            link.addEventListener('click', function(e) {
+                const href = this.getAttribute('href');
+                if (href.startsWith('#')) {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        window.scrollTo({
+                            top: target.offsetTop - 40,
+                            behavior: 'smooth'
+                        });
+                    }
+                }
+            });
+        });
+        // Scroll to top on page refresh
+        window.onbeforeunload = function () {
+            window.scrollTo(0, 0);
+        };
+        </script>
+        <style>
+
+</style>
+</body>
+
+</html>
