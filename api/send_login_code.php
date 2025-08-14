@@ -54,12 +54,12 @@ try {
     $mail->isSMTP();
     $mail->Host = 'smtp.gmail.com'; // Replace with your SMTP host
     $mail->SMTPAuth = true;
-    $mail->Username = 'kaidiofficial22625@gmail.com'; // Replace with your email
-    $mail->Password = 'onjq gckn upfo yelk';   // Use App Password if Gmail 2FA enabled
+    $mail->Username = 'example@gmail.com'; // Replace with your email
+    $mail->Password = 'password';   // Use App Password if Gmail 2FA enabled
     $mail->SMTPSecure = 'tls';
     $mail->Port = 587;
 
-    $mail->setFrom('kaidiofficial22625@gmail.com', 'Dhiren Portfolio');
+    $mail->setFrom('example@gmail.com, 'name or anything else');
     $mail->addAddress($email);
 
     $mail->Subject = 'Your Admin Login Code';
